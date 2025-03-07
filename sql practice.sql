@@ -1,0 +1,28 @@
+--  STRING FUNCTIONS  
+ -- select first_name,lower(first_name)lc,upper(first_name)uc from hr.employees
+-- select upper('Data'),lower('Data'),length('Data'),initcap('Data engineering'),ltrim('Data'),rtrim('Data')from dual
+-- select lpad('123',5,'0')from dual
+-- select lpad('123',5,'0')from dual
+-- select trim('  data  ')from dual
+--  select replace('data science','science','engineering')from dual
+-- select ceil(12.5)from dual
+-- select floor(12.5)from dual
+-- select round(13.3456,2)from dual
+-- select round (12.789,0)from dual
+-- select round(12343,-2)from dual ##nearest 10s
+-- select round(12343,-3)from dual ##nearest 100s
+--  select abs(-20)from dual## it gives absolute value
+--  select trunc(12.345,2)from dual
+--  select trunc(12.34567,3)from dual
+-- select mod(20,3)from dual ##it returns the remainder of division
+-- select power(2,5)from dual
+-- select sqrt(20)from dual
+-- SIGN: Returns the sign of a number (-1, 0, 1)
+--  SELECT SIGN(-15) AS Sign_Value FROM DUAL; -- Output: -1
+-- select sign (30)from dual ## positive sign it return 1,negative sign it return -1
+-- select exp(1)from dual #exponential of e value is 2.718 
+-- select exp(2)from dual ##2.718^2 output is 7.387
+-- select ln(10)from dual #output 2.302  LN: Returns the natural logarithm (log base e) of a number
+-- select log(10,1000)from dual #output3
+-- select greatest (10,20,40,60)from dual
+select least (10,5,4,3)from dual
