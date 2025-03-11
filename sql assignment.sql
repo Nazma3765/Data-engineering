@@ -27,25 +27,28 @@ select *from prod_id count(*) sh.sales
 
 
 
+###Retrieve all records from the sales.sh table.
 SELECT * 
 FROM sh.sales
-WHERE time_id= sysdate - INTERVAL '30' DAY;
+WHERE time_id>= sysdate - INTERVAL '30' DAY;
+
 ##Extract the year from the sales date column.
 select time_id,extract(year from time_id)year from sh.sales
+ 
 ##Extract the month from the sales date column. 
 select time_id,extract(month from time_id)month from sh.sales
-SELECT * 
-FROM sh.sales
-WHERE EXTRACT(DOW FROM time_id) IN (0, 6);
+ 
+##Retrieve sales records for transactions that occurred on weekends.
 SELECT * 
 FROM sh.sales
 WHERE TO_CHAR(time_id, 'D') IN ('1', '7');
-select *from sh.sales
+
 ##Find the first and last recorded sales transaction dates.
  SELECT 
---     MIN(time_id) AS first_time_id,
---     MAX(time_id) AS last_time_id
--- FROM sh.sales;
+    MIN(time_id) AS first_time_id,
+   MAX(time_id) AS last_time_id
+ FROM sh.sales;
+
 ##Count the number of sales transactions that happened in the last 7 days.
 SELECT COUNT(*) AS count
 FROM sh.sales
@@ -60,6 +63,7 @@ SELECT *
 FROM sh.sales
 WHERE time_id = TO_DATE('01-MAR-2024', 'DD-MON-YYYY');
 
+##Retrieve sales that occurred during a specific time range (09:00 AM - 12:00 PM)
 SELECT * 
 FROM sh.sales
 WHERE TIME(time_id)) BETWEEN '09:00:00' AND '11:59:59';
