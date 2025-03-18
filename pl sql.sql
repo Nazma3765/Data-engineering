@@ -54,7 +54,7 @@ DECLARE
 BEGIN
     SELECT first_name INTO first_name FROM hr.employees 
     WHERE employee_id = (SELECT MIN(employee_id) FROM hr.employees);
-    DBMS_OUTPUT.PUT_LINE('First Employee: ' || first_name);
+    DBMS_OUTPUT.PUT_LINE('First name: ' || first_name);
 END;
 
 --Fetching Data Using EXISTS
