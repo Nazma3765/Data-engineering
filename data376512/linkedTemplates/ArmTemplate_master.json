@@ -11,6 +11,26 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage1'"
 		},
+		"sql_db_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'sql_db'"
+		},
+		"ls_github_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://raw.githubusercontent.com/"
+		},
+		"sql_db_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "datasql3765.database.windows.net"
+		},
+		"sql_db_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "sql@124"
+		},
+		"sql_db_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "adminnazma"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -40,6 +60,21 @@
 					},
 					"AzureBlobStorage1_connectionString": {
 						"value": "[parameters('AzureBlobStorage1_connectionString')]"
+					},
+					"sql_db_password": {
+						"value": "[parameters('sql_db_password')]"
+					},
+					"ls_github_properties_typeProperties_url": {
+						"value": "[parameters('ls_github_properties_typeProperties_url')]"
+					},
+					"sql_db_properties_typeProperties_server": {
+						"value": "[parameters('sql_db_properties_typeProperties_server')]"
+					},
+					"sql_db_properties_typeProperties_database": {
+						"value": "[parameters('sql_db_properties_typeProperties_database')]"
+					},
+					"sql_db_properties_typeProperties_userName": {
+						"value": "[parameters('sql_db_properties_typeProperties_userName')]"
 					}
 				}
 			},

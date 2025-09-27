@@ -8,6 +8,21 @@
 		"AzureBlobStorage1_connectionString": {
 			"value": ""
 		},
+		"sql_db_password": {
+			"value": ""
+		},
+		"ls_github_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/"
+		},
+		"sql_db_properties_typeProperties_server": {
+			"value": "datasql3765.database.windows.net"
+		},
+		"sql_db_properties_typeProperties_database": {
+			"value": "sql@124"
+		},
+		"sql_db_properties_typeProperties_userName": {
+			"value": "adminnazma"
+		},
 		"containerUri": {
 			"value": ""
 		},
