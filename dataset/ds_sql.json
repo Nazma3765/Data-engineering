@@ -1,0 +1,66 @@
+{
+	"name": "ds_sql",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "sql_db",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Branch_Id",
+				"type": "varchar"
+			},
+			{
+				"name": "Dealer_Id",
+				"type": "varchar"
+			},
+			{
+				"name": "Model_Id",
+				"type": "varchar"
+			},
+			{
+				"name": "Revenue",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "Units_sold",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "Date_Id",
+				"type": "varchar"
+			},
+			{
+				"name": "Day",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Month",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Year",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "BranchName",
+				"type": "varchar"
+			},
+			{
+				"name": "Dealername",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "source_data"
+		}
+	}
+}
