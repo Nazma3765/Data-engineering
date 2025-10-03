@@ -186,7 +186,13 @@
 				"outputs": [
 					{
 						"referenceName": "ds_sql",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"table_name": {
+								"value": "output",
+								"type": "Expression"
+							}
+						}
 					}
 				]
 			}
