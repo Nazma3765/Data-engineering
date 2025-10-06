@@ -11,13 +11,31 @@
 		"Azurefiles_connectionString": {
 			"value": ""
 		},
+		"ls_database_password": {
+			"value": ""
+		},
 		"ls_datalake_accountKey": {
+			"value": ""
+		},
+		"ls_datalake1_accountKey": {
 			"value": ""
 		},
 		"sql_db_password": {
 			"value": ""
 		},
+		"ls_database_properties_typeProperties_server": {
+			"value": "datasql3765.database.windows.net"
+		},
+		"ls_database_properties_typeProperties_database": {
+			"value": "sql@124"
+		},
+		"ls_database_properties_typeProperties_userName": {
+			"value": "adminnazma"
+		},
 		"ls_datalake_properties_typeProperties_url": {
+			"value": "https://blob2blob12.dfs.core.windows.net/"
+		},
+		"ls_datalake1_properties_typeProperties_url": {
 			"value": "https://blob2blob12.dfs.core.windows.net/"
 		},
 		"ls_github_properties_typeProperties_url": {
